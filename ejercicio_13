@@ -1,6 +1,5 @@
 from stack import Stack
 
-# Datos de los trajes
 trajes = [
     {"modelo": "Mark III", "pelicula": "Iron Man", "estado": "Dañado"},
     {"modelo": "Mark XLIV", "pelicula": "Avengers: Age of Ultron", "estado": "Dañado"},
@@ -79,7 +78,6 @@ def modelos_en_peliculas(pila, pelis):
         pila.push(aux.pop())
     return modelos
 
-# Ejecutar todos los puntos
 print("a) Mark XLIV apareció en:", buscar_mark_xliv(pila_trajes))
 print("b) Modelos dañados:")
 for d in modelos_danados(pila_trajes):
